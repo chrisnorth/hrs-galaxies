@@ -1,0 +1,162 @@
+body{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: 'Helvetica Neue','Arial';
+}
+
+div.outer{
+    position:relative;
+}
+
+.mos-img{
+    width:95%;
+    height:95%;
+    /*display:block;*/
+    top:0px;
+}
+
+.mos-img img{
+    width:100%
+}
+
+#mos-ir{
+    opacity:1.0;
+    /*border: 3px solid red;*/
+    top:0px;
+    */position:absolute;*/
+}
+
+#mos-vis{
+    opacity:0.5;
+    /*border: 3px solid blue;*/
+    top:0px;
+    position:absolute;
+}
+
+div.buttons{
+    position:fixed;
+    display:block;
+    margin: auto 10px;
+    top:10px;
+    height:40px;
+}
+
+.button{
+    margin-right:5px;
+    margin-left:5px;
+    padding-right:10px;
+    padding-left:10px;
+    font-size:22px;
+    height:24px;
+    border: 1px solid white;
+    z-index:10;
+    background-color:black;
+    cursor:pointer;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.button.leftalign{
+    float:left;
+}
+.button.rightalign{
+    float:right;
+}
+.button.arrow{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.button img{
+    height:24px;
+}
+
+.marker-area{
+    width:100%;
+    height:10px;
+    top:30px;
+    position:absolute;
+    border-left:1px solid red;
+    border-right:1px solid blue;
+    border-bottom:1px dashed white;
+    border-top:1px dashed white;
+}
+.marker{
+    width:10px;
+    height:10px;
+    left:0px;
+    background-color:white;
+    display:block;
+    position:absolute;
+}
+
+div.helpbox{
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    border:1px solid white;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: black;
+    font-size:22px;
+    height:24px;
+}
+
+a.helpbox{
+    color:#ffffff;
+}
+
+.fbhelp-outer{
+    display:none;
+}
+
+.fbhelp{
+    background-color:#000;
+    width:600px;
+    height:auto;
+    padding-bottom:10px;
+}
+
+.helptxt{
+    float:left;
+    width:560px;
+    margin-left:10px;
+    background-color:#fff;
+    padding: 10px 10px 10px 10px;
+    /*margin: 10px 20px 10px 20px;*/
+    box-shadow:inset 0 0 10px #000000;
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
+}
+
+p.help{
+    color:#000;
+    font-size:0.8em;
+    padding-left:20px;
+}
+
+h1.help{
+    color: white;
+    padding-left: 20px;
+    font-family: sans-serif;
+    padding-top:10px;
+    margin-top:0px;
+}
+
+h2.help{
+    color: black;
+    padding-left: 20px;
+    font-family: sans-serif;
+    padding-top:10px;
+    margin-top:0px;
+    font-size:1.2em;
+}
+
+.helpclear{
+    clear:both;
+}
+
