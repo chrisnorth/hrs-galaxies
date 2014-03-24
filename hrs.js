@@ -17,13 +17,13 @@ hrsimg.prototype.scaleimg = function(){
     console.log('scale',scale)
 
     //centre background images
-    bgw=Math.round(parseFloat($("#mos-ir").css("width"))*scale);
+    bgw=Math.round(parseFloat($("#mos-ir").css("width"))*scale - 20);
     bgh=Math.round(parseFloat($("#mos-ir").css("height"))*scale);
     this.bgw=bgw
     this.bgh=bgh
     this.scale=scale
-    //this.ml=(w - this.bgw)/2
-    this.ml=0
+    this.ml=(w - this.bgw)/2
+    //this.ml=0
     console.log('computed',this.bgw,this.bgh,this.ml)
     $(".outer").css({
 	"width":bgw+"px",
