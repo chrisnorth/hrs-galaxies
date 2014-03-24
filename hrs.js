@@ -121,4 +121,20 @@ $(document).ready(function(){
 	})
     });
 
+    var isInIframe = (window.location != window.parent.location) ? true : false;
+    //console.log(isInIframe);
+    if (!isInIframe){
+	$('div.fullscreenbox').css({'display':'none'});
+	//console.log('not in iframe')
+    }else{
+	$('div.backbox').css({'display':'none'});
+	//console.log('in iframe')
+    };
+
+    $('div.backbox').click(function(){
+	window.history.back()
+	//console.log('goback');
+    });
+
+
 });
