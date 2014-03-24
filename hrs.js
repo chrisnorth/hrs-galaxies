@@ -6,7 +6,7 @@ hrsimg.prototype.scaleimg = function(){
 
     //calculate widths
     var w=$(window).width();
-    var h=$(window).height() - 20;
+    var h=$(window).height();
     console.log('window',w,h);
     var el=$("#mos-ir");
     var scalex=w/el.outerWidth();
