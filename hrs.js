@@ -9,7 +9,7 @@ hrsimg.prototype.scaleimg = function(){
     var h=$(window).height();
     console.log('window',w,h);
     var el=$("#mos-ir");
-    var scalex=w/el.outerWidth();
+    var scalex=(w-20)/el.outerWidth();
     var scaley=h/el.outerHeight();
     console.log('img',el.outerWidth(),el.outerHeight())
     //var scale = (scalex < scaley ? scalex : scaley);
@@ -17,7 +17,7 @@ hrsimg.prototype.scaleimg = function(){
     console.log('scale',scale)
 
     //centre background images
-    bgw=Math.round(parseFloat($("#mos-ir").css("width"))*scale - 20);
+    bgw=Math.round(parseFloat($("#mos-ir").css("width"))*scale);
     bgh=Math.round(parseFloat($("#mos-ir").css("height"))*scale);
     this.bgw=bgw
     this.bgh=bgh
