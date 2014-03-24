@@ -84,6 +84,7 @@ div.buttons{
     border-right:1px solid blue;
     border-bottom:1px dashed white;
     border-top:1px dashed white;
+    background-color:#333333;
 }
 .marker{
     width:10px;
